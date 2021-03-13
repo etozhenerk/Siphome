@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Siphome</title>
 </head>
+
 <body>
-  
+  <main class="main">
+    <div class="container">
+      <header class="header main__header row">
+        <a href="#" class="col-3 logo header__logo">
+          <svg width="42" height="42" class="icon icon-logo logo__img">
+            <use xlink:href="./img/icons/icons.svg#logo"></use>
+          </svg>
+          <span class="logo__text logo__text--white">Siphome</span>
+        </a>
+        <nav class="header-nav col-6">
+          <ul class="header-nav__menu">
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Home</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Features</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Services</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header__buttons col-3">
+          <button class="button button--text-black button--border-right">Sign In</button>
+          <button class="button button--text-green">Get Started</button>
+        </div>
+      </header>
+      <section class="main-content main__content row">
+        <div class="main-content__text col-6">
+          <h1 class="main-content__title">
+            <span class="text--br">Imagine your</span>
+            home smart enough
+            <span class="text--color-green">to take care</span> of itself.
+          </h1>
+          <p class="main-content__descr">
+            Turn your home into a smarthome today with a simple &
+            affordable upgrade. Discover the upgrade that automates
+            home maintenance.
+          </p>
+          <div class="main-content__buttons">
+            <button class="main-content__button button button--green">Get Started</button>
+            <button class="button button--white">Learn More</button>
+          </div>
+        </div>
+        <div class="main-images main__images col-5 offset-1">
+          <img src="./img/main/img-large.jpg" alt="main-img" class="main-images__img main-images__img--large">
+          <img src="./img/main/img-small.jpg" alt="main-img" class="main-images__img main-images__img--small">
+        </div>
+      </section>
+
+    </div>
+  </main>
 </body>
+
 </html>

@@ -1,0 +1,52 @@
+.logo
+  display: flex
+  align-items: center
+  text-decoration: none
+  &__img
+    margin-right: 12px
+  &__text
+    font-weight: bold
+    font-size: 22px
+    line-height: 27px
+    &--white
+      color: $color-white
+.button
+  border: none
+  background-color: transparent
+  font-size: 13px
+  line-height: 16px
+  font-weight: bold
+  padding: 12px 22px
+  border-radius: 3px
+  cursor: pointer
+  &--green
+    background-color: $color-green
+    color: $color-white
+    border: 1px solid transparent
+  &--white
+    color: $color-white
+    border: 1px solid $color-white
+  &--text
+    &-black
+      color: $color-black
+    &-green
+      color: $color-green
+  &--border
+    &-right
+      position: relative
+      &::after
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        content: ''
+        display: block
+        height: 24px
+        width: 1px
+        background-color: rgba($color-black, 0.4)
+.text
+  &--br
+    display: block
+  &--color
+    &-green
+      color: $color-green

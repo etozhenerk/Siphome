@@ -1,0 +1,21 @@
+.header
+  padding-top: 36px
+  padding-bottom: 16px
+  align-items: center
+  &-nav
+    &__menu
+      margin: 0
+      padding: 0
+      list-style: none
+      display: flex
+    &__item
+      &:not(:last-child)
+        margin-right: 42px
+    &__link
+      text-decoration: none
+      color: rgba($color-white, 0.6)
+      &:hover
+        color: $color-white
+  &__buttons
+    display: flex
+    justify-content: flex-end
