@@ -11,7 +11,6 @@
     &--white
       color: $color-white
 .button
-  border: none
   background-color: transparent
   font-size: 13px
   line-height: 16px
@@ -19,18 +18,21 @@
   padding: 12px 22px
   border-radius: 3px
   cursor: pointer
-  &--green
+  color: $color-white
+  border: 1px solid $color-white
+  &:hover
     background-color: $color-green
-    color: $color-white
     border: 1px solid transparent
-  &--white
-    color: $color-white
-    border: 1px solid $color-white
+  &--outline
+    border: none
+    &:hover
+      background-color: transparent
+      border: none
   &--text
     &-black
       color: $color-black
-    &-green
-      color: $color-green
+      &:hover
+        color: $color-green
   &--border
     &-right
       position: relative
@@ -50,3 +52,29 @@
   &--color
     &-green
       color: $color-green
+.icon
+  &-card
+    width: 55px
+    height: 55px
+.section
+  &-header
+    &__suptitle
+      font-weight: bold
+      font-size: 15px
+      line-height: 140%
+      letter-spacing: 0.6em
+      text-transform: uppercase
+      color: $color-blue
+      margin-bottom: 16px
+    &__title
+      font-weight: bold
+      font-size: 42px
+      line-height: 140%
+      letter-spacing: -0.02em
+      color: $color-black
+      margin-bottom: 24px
+    &__subtitle
+      font-weight: normal
+      font-size: 18px
+      line-height: 160%
+      color: $color-gray
